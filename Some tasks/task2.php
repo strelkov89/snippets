@@ -2,8 +2,7 @@
 $str = "https://www.somehost.com/test/index.html?param1=4&param2=3&param3=2&param4=1&param5=3";
 
 function getStr($str) {
-   $params = [];
-   $paramsStr = "";  
+   $params = [];   
    $url = parse_url($str);
    $paramsTmp = explode("&", $url["query"]); 
 
